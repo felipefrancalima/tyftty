@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Pai</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+        <main>
+            <div id="conteudo">
+                <h2>Aceita ir ao show do Slipknot comigo?</h2>
+                <div class="button-container">
+                    <button onclick="sim()">Sim</button>
+                    <div id="naoButton" onclick="desvia(this)" onmouseover="desvia(this)">Não</button>
+                </div>
+                <div id e="music-control">
+                    <audio src="Birth Of The Cruel -- Released August 5, 2019 (256).mp3" controls loop ></audio>
+                </div>
+            </div>
+            <div class="background">
+                <img src="Metal Wallpaper para Download no Celular ou Computador PC.jfif" alt="Slipknot 1">
+                <img src="Linkin Park poster.jpg" alt="Slipknot 2">
+                <img src="WOWWIEEEEEEE.jfif" alt="Slipknot 3">
+                <img src="slipknot (1).jfif" alt="Slipknot 4">
+                <img src="☆  James Root.jfif" alt="Slipknot 5">
+                <img src="୧ 𝘖𝘩𝘁𝗼 𝘢𝗶 𝘳𝘰𝗰𝗸 𝘵𝘩𝘦𝗺𝗲 ୨.jfif" alt="Slipknot 6">
+            </div>
+            <script>
+                function sim() {
+                    alert("Fez uma boa escolha, amigo :)");
+                    location.href = "https://www.eventim.com.br/campaign/knotfestbrasil";
+                }
+                function desvia(btn) {
+                    btn.style.position = 'absolute';
+                    btn.style.top = geraPosicao(10, 90);
+                    btn.style.left = geraPosicao(10, 90);
+                    console.log('Opa, desviei...');
+                }
+                function geraPosicao(min, max) {
+                    return (Math.random() * (max - min) + min) + "%";
+                }
+            </script>
+        </main>
+</body>
+</html>

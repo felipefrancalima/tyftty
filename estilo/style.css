@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'slip';
+    src: url('../Sickness.ttf') format('opentype');
+    font-weight: 900;
+}
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-slip: 'slip';
+    
+}
+
+h2 {
+    font-family: var(--fonte-padrao);
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    font-variant: small-caps; 
+}
+
+button {
+    font-family: var(--fonte-slip);
+    font-weight: lighter;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+    border-radius
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: underline;
+}
+
+#naoButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 10px;
+    width: 54px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 15px;
+}
+
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;  
+            background: #000 fixed;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            padding: 3px;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .background img {
+            height: 50vh;
+            width: 33%;
+            object-fit: cover;
+            filter: brightness(50%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #music-control {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        audio {
+            width: 300px;
+            max-width: 109px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            padding: 3px;
+            margin: auto;
+        }
+
+        #conteudo {
+            margin: auto;
+            padding: 80px;
+        }
